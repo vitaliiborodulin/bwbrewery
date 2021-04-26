@@ -1,0 +1,75 @@
+// USER VARIABLES SECTION
+
+@accent: #ff001e; // Accent Color
+@fontsize: 16px; // Body Font Size
+@lineheight: 1.65; // Document Line Height
+@textcolor: #222222; // Text Color
+@white: #ffffff;
+@beige: #BC9B77;
+
+
+@userfont: 'Modelica', sans-serif;
+@systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+.font(@fname, @fstyle, @fweight, @furl) {
+	@font-face {
+		font-family: @fname;
+		font-style: @fstyle;
+		font-weight: @fweight;
+		display: swap;
+		src: url(@furl) format('woff2');
+	}
+}
+
+.font('Modelica', normal, 400, '../fonts/Modelica-Regular.woff2');
+.font('Modelica', normal, 900, '../fonts/Modelica-Black.woff2');
+
+.font('GeoSlb', normal, 400, '../fonts/GeoSlb-Regular.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+.container-full {
+  .wrapper-full();
+}
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: @accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+
+
+html {
+	// scroll-behavior: smooth;
+}
+
+body {
+	font-family: @userfont;
+	font-size: @fontsize;
+	font-weight: 400;
+	line-height: @lineheight;
+	color: @textcolor;
+	min-width: 320px;
+}

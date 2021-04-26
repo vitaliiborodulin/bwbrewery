@@ -1,0 +1,41 @@
+.hero {
+  color: #fff;
+  background: url(../img/hero-bg.jpg) no-repeat center/cover;
+
+  &__content {
+    height: 100vh;
+    .row-flex();
+    align-items: center;
+  }
+
+  &__cta {
+    .col();
+    .size(6);
+    .shift-left(6);
+
+    h1 {
+      margin-bottom: 78px;
+    }
+    
+    span {
+      text-transform: uppercase;
+      display: block;
+      line-height: 1;
+      
+      &:first-child {
+        margin-bottom: 15px;
+        font-family: 'GeoSlb';
+        font-size: 61px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 18px;
+        font-size: 36px;
+      }
+      &:last-child {
+        font-size: 54px;
+        font-weight: 900;
+        color: @accent;
+      }
+    }
+  }
+}

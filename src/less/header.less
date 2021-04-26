@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  font-size: 18px;
+  color: @white;
+	position: absolute;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  &__content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-bottom: 30px;
+
+    i {
+      margin-right: 11px;
+    }
+  }
+
+  &__tel {
+    margin-right: 35px;
+  }
+
+  &__mail {
+    margin-right: 70px;
+  }
+
+  &__menu {
+    display: flex;
+    text-transform: uppercase;
+    li + li {
+      margin-left: 25px;
+    }
+  }
+}
