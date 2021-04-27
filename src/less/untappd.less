@@ -1,0 +1,76 @@
+.untappd {
+  padding-top: 19px;
+  padding-bottom: 25px;
+  
+  color: @white;
+  background-color: @black;
+  
+  &__content {
+    min-height: 136px;
+    // .row-flex();
+    // align-items: center;
+    // .lg(text-align, center);
+  }
+
+  &__text {
+    // .col();
+    // .size(10);
+    // .size-lg(12);
+    position: relative;
+    padding-left: 200px;
+    .sm-block({
+      padding-left: 0;
+      padding-top: 160px;
+      text-align: center;
+    });
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      .sm-block({
+        left: 50%;
+        margin-left: -90px;
+      });
+      width: 184px;
+      height: 135px;
+      background: url(../img/untappd-img.png) no-repeat;
+    }
+
+    .row-flex();
+    align-items: center;
+    justify-content: space-between;
+
+
+    p {
+      font-size: 22px;
+      // line-height: 38px;
+    }
+  }
+
+  &__text-wrapper {
+    .col();
+    .size(8);
+    .size-xl(12);
+    .xl(margin-bottom, 10px);
+  }
+
+
+  &__header {
+    margin-bottom: 10px;
+    font-size: 30px;
+    // line-height: 36px;
+    text-transform: uppercase;
+    color: @accent;
+  }
+
+  &__btn {
+    .col();
+    .size(4);
+    .size-xl(12);
+    max-width: 300px;
+    .sm-block({
+      margin: 0 auto;
+    });
+  }
+}

@@ -5,7 +5,7 @@
 @lineheight: 1.65; // Document Line Height
 @textcolor: #222222; // Text Color
 @white: #ffffff;
-@beige: #BC9B77;
+@black: #000;
 
 
 @userfont: 'Modelica', sans-serif;
@@ -61,15 +61,30 @@ input, textarea {
 
 
 
-html {
-	// scroll-behavior: smooth;
-}
+// html {
+// 	scroll-behavior: smooth;
+// }
 
 body {
 	font-family: @userfont;
 	font-size: @fontsize;
 	font-weight: 400;
-	line-height: @lineheight;
+	// line-height: @lineheight;
 	color: @textcolor;
 	min-width: 320px;
+}
+
+.section-header {
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'GeoSlb';
+}
+
+.section-subheader {
+  color: @accent;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
 }

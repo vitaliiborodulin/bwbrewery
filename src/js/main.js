@@ -5,7 +5,8 @@ $(function(){
 
 	$('input[type="tel"]').mask("+7 (999) 999-9999");
 
-  console.log(1);
+  //= components/burger.js
+  //= components/menuClick.js
 
 });
 
