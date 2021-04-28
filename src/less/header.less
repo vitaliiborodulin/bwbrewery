@@ -31,6 +31,13 @@
       margin-top: -19px;
     });
 
+    a {
+      transition: color 0.3s ease;
+      &:hover, &:active, &:focus {
+        color: @accent;
+      }
+    }
+
     li {
       .md(margin-bottom, 10px);
     }
@@ -57,6 +64,12 @@
       margin-left: auto;
       margin-right: auto;
     });
+    li {
+      transition: color 0.3s ease;
+      &:hover, &:active, &:focus {
+        color: @accent;
+      }
+    }
     li + li {
       margin-left: 25px;
       .md(margin-left, 0);

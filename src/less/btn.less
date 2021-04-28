@@ -1,6 +1,7 @@
 .btn {
-  padding: 19px 23px;
-
+  padding: 12px 23px;
+  display: inline-block;
+  
   font-size: 22px;
   .sm(font-size, 18px);
 
@@ -13,6 +14,28 @@
   transition: background-color 0.3s ease;
 
   &:hover, &:active, &:focus {
+    cursor: pointer;
     background-color: darken(@accent, 10%);
   }
+}
+
+.arrowUpBtn {
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 80px;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 5px @white;
+	opacity: 0.5;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity 0.2s;
+	background: @white no-repeat url(../img/up-button.svg) center/contain;
+
+	&:hover {
+			opacity: 1;
+	}
 }

@@ -1,0 +1,89 @@
+.order {
+  padding-top: 54px;
+  padding-bottom: 117px;
+
+  color: @black;
+
+  &__content {
+    .row-flex();
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    .lg(flex-wrap, wrap);
+  }
+
+  &__text {
+    .col();
+    .size(8);
+    .size-lg(12);
+  }
+
+  &__header {
+    margin-bottom: 41px;
+    text-align: left;
+    color: @black;
+    .sm(margin-bottom, 20px);
+  }
+
+  &__subheader {
+    margin-bottom: 47px;
+    font-family: 'GeoSlb';
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @accent;
+    .sm(margin-bottom, 25px);
+  }
+
+  &__descr {
+    max-width: 790px;
+    margin-bottom: 80px;
+    .sm(margin-bottom, 40px);
+    color: @grey;
+
+    a {
+      color: inherit;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 35px;
+      .sm(margin-bottom, 18px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 740px;
+    padding-left: 20px;
+    li {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 54px;
+      .sm(margin-bottom, 25px);
+      // margin-right: 70px;
+      &:not(:first-child) {
+        max-width: 300px;
+      }
+      // &:not(:last-child) {
+      //   margin-bottom: 54px;
+      // }
+    }
+    .fa-li {
+      color: @accent;
+      font-size: 40px;
+    }
+  }
+
+  &__form {
+    .col();
+    .size(4);
+    .size-lg(12);
+    margin-top: 130px;
+    .lg(margin-top, 0);
+
+    &::before {
+      .lg(display, none);
+    }
+  }
+}

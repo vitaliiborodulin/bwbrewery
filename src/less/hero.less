@@ -1,13 +1,13 @@
 .hero {
   color: #fff;
-  background: url(../img/hero-bg.jpg) no-repeat center/cover;
+  background: #635243 url(../img/hero-bg.jpg) no-repeat center/cover;
   .lg-block({
     background-position-x: 20%;
-    padding-top: 40px;
+    padding-top: 50px;
   });
 
   &__content {
-    height: 100vh;
+    min-height: 100vh;
     .row-flex();
     align-items: center;
   }
@@ -52,4 +52,10 @@
   // &__btn {
   //   font-size: 27px;
   // }
+}
+
+@media (orientation: landscape) and (max-width: 939px){
+  .hero__content {
+    min-height: 500px;
+  }
 }

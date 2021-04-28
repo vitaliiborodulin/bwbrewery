@@ -2,10 +2,11 @@
 
 @accent: #ff001e; // Accent Color
 @fontsize: 16px; // Body Font Size
-@lineheight: 1.65; // Document Line Height
+@lineheight: 1.875; // Document Line Height
 @textcolor: #222222; // Text Color
 @white: #ffffff;
 @black: #000;
+@grey: #6c6c6c;
 
 
 @userfont: 'Modelica', sans-serif;
@@ -22,6 +23,7 @@
 }
 
 .font('Modelica', normal, 400, '../fonts/Modelica-Regular.woff2');
+.font('Modelica', normal, 700, '../fonts/Modelica-Bold.woff2');
 .font('Modelica', normal, 900, '../fonts/Modelica-Black.woff2');
 
 .font('GeoSlb', normal, 400, '../fonts/GeoSlb-Regular.woff2');
@@ -42,6 +44,8 @@
 
 .container-full {
   .wrapper-full();
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 ::placeholder {
@@ -55,8 +59,8 @@
 
 input, textarea {
 	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
+	&:focus:required:invalid { border: 3px solid @accent }
+	&:required:valid { border: 3px solid green }
 }
 
 
@@ -69,7 +73,7 @@ body {
 	font-family: @userfont;
 	font-size: @fontsize;
 	font-weight: 400;
-	// line-height: @lineheight;
+	line-height: @lineheight;
 	color: @textcolor;
 	min-width: 320px;
 }
@@ -78,8 +82,10 @@ body {
   color: @white;
   text-transform: uppercase;
   text-align: center;
-  font-size: 48px;
   font-family: 'GeoSlb';
+  font-size: 48px;
+  line-height: 48px;
+  .sm(font-size,35px);
 }
 
 .section-subheader {
@@ -87,4 +93,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
+  line-height: 36px;
+  .sm(font-size,22px);
 }
