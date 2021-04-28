@@ -337,10 +337,23 @@
 	</div>
 	</footer>
 	
-	<div style="display: none;" id="hero__form" class="popup">
-	  <div class="popup__content">
-	    hero form
-	  </div>
+	<div style="display: none;" id="hero__form" class="popup form">
+	    <form action="#">
+	      <h3 class="form__title">Запросить прайс-лист</h3>
+	      <p>
+	        <label for="order_name">Ваше имя:</label>
+	        <input type="text" name="order_name" id="order_name" required>
+	      </p>
+	      <p>
+	        <label for="order_tel">Телефон:</label>
+	        <input type="tel" name="order_tel" id="order_tel" placeholder="+7 (___) ___-__-__" required>
+	      </p>
+	      <p>
+	        <label for="order_mail">E-mail:</label>
+	        <input type="email" name="order_mail" id="order_mail" required>
+	      </p>
+	      <button type="submit" class="btn form__btn"><i class="fas fa-check"></i> Заказать</button>
+	    </form>
 	</div>
 	<!-- end footer -->
 
