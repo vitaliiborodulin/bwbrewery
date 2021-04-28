@@ -198,12 +198,22 @@
 	    <div class="prod__box">
 	
 	      <div class="prod__tabs">
-	
+	        <button type="button" class="btn prod__tab prod__tab--active" data-tab="reg">Регулярная линейка</button>
+					<button type="button" class="btn prod__tab" data-tab="siz">Сезонные варки</button>
+					<button type="button" class="btn prod__tab" data-tab="spe">Спец Варка</button>
 	      </div>
+	
+	      <div class="prod__tabs--mobile">
+					<select id="prod-select">
+						<option value="reg" selected>Регулярная линейка</option>
+						<option value="siz">Сезонные варки</option>
+						<option value="spe">Спец Варка</option>
+					</select>
+				</div>
 	
 	      <div class="prod__list">
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="reg">
 	          <div class="prod__pic"><img src="img/prod-logo-port.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Чёрный Дятел Porter</h3>
 	          <div class="prod__sort">Пиво темное</div>
@@ -218,7 +228,7 @@
 	          </div>
 	        </div>
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="reg">
 	          <div class="prod__pic"><img src="img/prod-logo-wh.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Черный Дятел American Wheat</h3>
 	          <div class="prod__sort">Пиво пшеничное</div>
@@ -233,7 +243,7 @@
 	          </div>
 	        </div>
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="reg">
 	          <div class="prod__pic"><img src="img/prod-logo-pale.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Черный Дятел PaleAle</h3>
 	          <div class="prod__sort">Пиво светлое</div>
@@ -242,7 +252,7 @@
 	          <a href="#" class="btn prod__btn" data-fancybox data-src="#port">Подробнее...</a>
 	        </div>
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="siz">
 	          <div class="prod__pic"><img src="img/prod-logo-bale.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Черный Дятел BlondAle</h3>
 	          <div class="prod__sort">Пиво светлое</div>
@@ -251,7 +261,7 @@
 	          <a href="#" class="btn prod__btn" data-fancybox data-src="#port">Подробнее...</a>
 	        </div>
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="spe">
 	          <div class="prod__pic"><img src="img/prod-logo-pale.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Черный Дятел PaleAle</h3>
 	          <div class="prod__sort">Пиво светлое</div>
@@ -260,7 +270,7 @@
 	          <a href="#" class="btn prod__btn" data-fancybox data-src="#port">Подробнее...</a>
 	        </div>
 	
-	        <div class="prod__item">
+	        <div class="prod__item" data-tab="spe">
 	          <div class="prod__pic"><img src="img/prod-logo-pale.jpg" alt="" width="317" height="305"></div>
 	          <h3 class="prod__title">Черный Дятел PaleAle</h3>
 	          <div class="prod__sort">Пиво светлое</div>
