@@ -10,12 +10,18 @@
 
   text-align: center;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 
-  &:hover, &:active, &:focus {
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover {
     cursor: pointer;
-    background-color: darken(@accent, 10%);
+    background-color: darken(@accent, 20%);
   }
 }
 
@@ -31,7 +37,7 @@
 	box-shadow: 0 0 5px @white;
 	opacity: 0.5;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 95;
 	transition: opacity 0.2s;
 	background: @white no-repeat url(../img/up-button.svg) center/contain;
 

@@ -38,11 +38,15 @@
     
     select {
       padding: 12px 23px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
       font-size: 22px;
       border-radius: 5px;
       color: @white;
       background-color: @accent;
       border: none;
+      .sm(font-size, 18px);
     }
   }
 
@@ -117,7 +121,7 @@
   }
 
   &__btn {
-    padding: 12px 35px;
+    padding: 8px 35px;
     background-color: @black;
     &:hover, &:active, &:focus {
       background-color: @grey;

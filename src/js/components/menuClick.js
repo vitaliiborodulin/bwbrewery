@@ -7,4 +7,5 @@ $('body').on('click', '[href*="#"]', function(e){
 	e.preventDefault();
 	burger.toggleClass('header__burger--close');
 	menu.toggleClass('header__menu--open');
+  // $('html').toggleClass('scroll-disabled');
 });

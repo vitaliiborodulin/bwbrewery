@@ -6,10 +6,12 @@ $(function(){
 
 	$('input[type="tel"]').mask("+7 (999) 999-99-99");
 
+  //= components/age.js
   //= components/burger.js
   //= components/menuClick.js
   //= components/tabs.js
   //= components/slider.js
+  //= components/map.js
   //= components/upBtn.js
 
 });

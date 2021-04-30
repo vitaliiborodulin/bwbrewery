@@ -17,7 +17,7 @@
 		font-family: @fname;
 		font-style: @fstyle;
 		font-weight: @fweight;
-		display: swap;
+		font-display: swap;
 		src: url(@furl) format('woff2');
 	}
 }
@@ -63,11 +63,9 @@ input, textarea {
 	&:required:valid { border: 3px solid green }
 }
 
-
-
-// html {
-// 	scroll-behavior: smooth;
-// }
+.scroll-disabled {
+  overflow: hidden;
+}
 
 body {
 	font-family: @userfont;
