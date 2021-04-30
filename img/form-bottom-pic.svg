@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="221" height="127" viewBox="0 0 221 127">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #333;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Многоугольник_4" data-name="Многоугольник 4" class="cls-1" d="M874.992,7852l-221-57.56,58.956-69.45Z" transform="translate(-654 -7725)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="127"><path id="Многоугольник_4" data-name="Многоугольник 4" d="M874.992 7852l-221-57.56 58.956-69.45z" transform="translate(-654 -7725)" fill="#333" fill-rule="evenodd"/></svg>
