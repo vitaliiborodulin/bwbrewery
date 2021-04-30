@@ -487,26 +487,38 @@
 			</div>
 	</div>
 	</footer>
+	<!-- end footer -->
+
+  <!-- popup -->
+	<div style="display: none;" id="age" class="popup age">
+	  <div class="popup__content">
+	    <h2>Вам уже есть <br> 18 лет?</h2>
+	    <div class="popup__btns">
+	      <a href="http://yandex.ru" class="btn age__btn"><i class="fas fa-times"></i> Нет</a>
+	      <a href="#yes" class="btn age__btn"><i class="fas fa-check"></i> Да</a>
+	    </div>
+	  </div>
+	</div>
 	
 	<div style="display: none;" id="hero__form" class="popup form">
-	    <form action="#">
-	      <h3 class="form__title">Запросить прайс-лист</h3>
-	      <p>
-	        <label for="hero_name">Ваше имя:</label>
-	        <input type="text" name="hero_name" id="hero_name" required>
-	      </p>
-	      <p>
-	        <label for="hero_tel">Телефон:</label>
-	        <input type="tel" name="hero_tel" id="hero_tel" placeholder="+7 (___) ___-__-__" required>
-	      </p>
-	      <p>
-	        <label for="hero_mail">E-mail:</label>
-	        <input type="email" name="hero_mail" id="hero_mail" required>
-	      </p>
-	      <button type="submit" class="btn form__btn"><i class="fas fa-check"></i> Заказать</button>
-	    </form>
+	  <form action="#">
+	    <h3 class="form__title">Запросить прайс-лист</h3>
+	    <p>
+	      <label for="hero_name">Ваше имя:</label>
+	      <input type="text" name="hero_name" id="hero_name" required>
+	    </p>
+	    <p>
+	      <label for="hero_tel">Телефон:</label>
+	      <input type="tel" name="hero_tel" id="hero_tel" placeholder="+7 (___) ___-__-__" required>
+	    </p>
+	    <p>
+	      <label for="hero_mail">E-mail:</label>
+	      <input type="email" name="hero_mail" id="hero_mail" required>
+	    </p>
+	    <button type="submit" class="btn form__btn"><i class="fas fa-check"></i> Заказать</button>
+	  </form>
 	</div>
-	<!-- end footer -->
+	<!-- end popup -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
