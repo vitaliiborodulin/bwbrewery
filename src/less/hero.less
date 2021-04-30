@@ -2,7 +2,8 @@
   color: #fff;
   background: #635243 url(../img/hero-bg.jpg) no-repeat center/cover;
   .lg-block({
-    background-position-x: 20%;
+    // background-position-x: 20%;
+    background: #635243 url(../img/carousel-bg.jpg) no-repeat center/cover;
     padding-top: 50px;
   });
 
@@ -44,14 +45,10 @@
         font-size: 45px;
         font-weight: 900;
         color: @accent;
-        .sm(font-size, 24px);
+        .lg(font-size, 24px);
       }
     }
   }
-
-  // &__btn {
-  //   font-size: 27px;
-  // }
 }
 
 @media (orientation: landscape) and (max-width: 939px){

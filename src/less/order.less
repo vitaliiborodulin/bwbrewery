@@ -1,6 +1,17 @@
 .order {
+  position: relative;
   padding-top: 54px;
   padding-bottom: 117px;
+  &::before {
+    display: none;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -100px;
+    width: 236px;
+    height: 655px;
+    background: url(../img/order-pic.svg) no-repeat;
+  }
 
   color: @black;
 
@@ -82,8 +93,16 @@
     margin-top: 130px;
     .lg(margin-top, 0);
 
-    &::before {
-      .lg(display, none);
+    form {
+      &::before {
+        .lg(display, none);
+      }
     }
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .order::before {
+    display: block;
   }
 }

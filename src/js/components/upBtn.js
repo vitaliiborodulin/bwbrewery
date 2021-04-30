@@ -5,9 +5,8 @@ var arrowUpBtn = $('.arrowUpBtn');
 
 function scrollBtn() {
 	var top = $(this).scrollTop();
-	var footerTop = $('.footer').offset().top - 800;
 
-	if (top > 300 && top < footerTop) {
+	if (top > 300) {
 		arrowUpBtn.fadeIn(500);
 	} else {
 		arrowUpBtn.fadeOut(500);

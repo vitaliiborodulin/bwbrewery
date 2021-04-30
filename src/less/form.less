@@ -1,21 +1,27 @@
 .form {
-  position: relative;
-  padding: 41px 33px 25px;
-  min-width: 400px;
-  .sm(min-width, calc(100% - 30px));
-  &::before {
-    position: absolute;
-    content: '';
-    left: -60px;
-    top: 0;
-    width: 221px;
-    height: 127px;
-    background: url(../img/form-pic.svg) no-repeat;
-    z-index: -1;
-  }
 
-  color: @white;
-  background-color: @black;
+  form {
+    position: relative;
+    padding: 41px 33px 25px;
+    // min-width: 400px;
+    .sm(min-width, calc(100% - 30px));
+    color: @white;
+    background-color: @black;
+    
+    &::before {
+      position: absolute;
+      content: '';
+      left: -60px;
+      top: 0;
+      width: 221px;
+      height: 127px;
+      background: url(../img/form-pic.svg) no-repeat;
+      z-index: -1;
+    }
+  }
+  
+
+  
 
   &__title {
     text-align: center;

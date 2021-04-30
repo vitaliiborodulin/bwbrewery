@@ -23,5 +23,19 @@ $('#prod-select').on('change', function(){
   let content = $('.prod__item[data-tab="'+ id +'"]');
   content.show();
 
+});
+
+//map
+
+$('.points__list li').hide();
+let attrPoints = $('#map-select').val();
+$('.points__list li[data-tab="'+ attrPoints +'"]').show();
+
+$('#map-select').on('change', function(){
+	let id = $('#map-select').val();
+
+  $('.points__list li').hide();
+  let content = $('.points__list li[data-tab="'+ id +'"]');
+  content.show();
 
 });

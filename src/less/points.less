@@ -1,0 +1,106 @@
+.points {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 70px;
+
+  &::before {
+    display: none;
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -386px;
+    width: 268px;
+    height: 738px;
+    background: url(../img/points-pic.svg) no-repeat;
+  }
+
+  .lg(padding-top, 30px);
+
+  color: @white;
+  background-color: @black;
+
+  &__content {
+    .row-flex();
+  }
+
+  &__box, &__map {
+    .col();
+    .size(6);
+    .size-lg(12);
+  }
+
+  &__header {
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    max-height: 440px;
+    overflow-y: auto;
+
+    li {
+      margin-bottom: 35px;
+      position: relative;
+      padding-left: 78px;
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 78px;
+        background: url(../img/points-item.png) no-repeat;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 2px;
+    font-family: 'GeoSlb';
+    font-size: 22px;
+    line-height: 1;
+    color: @accent;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__map {
+    .lg-block({
+      order: -1;
+      margin-bottom: 30px;
+    });
+
+    p {
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+    // width: 670px;
+    // height: 460px;
+  }
+
+  #map-select {
+    margin-bottom: 17px;
+    width: 100%;
+    // max-width: 670px;
+    padding: 12px 23px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: @grey;
+    background-color: @white;
+    border: none;
+  }
+
+  #map {
+    background: url(../img/map.jpg) no-repeat;
+    width: 100%;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .points::before {
+    display: block;
+  }
+}

@@ -1,5 +1,5 @@
 # bwbrewery
 
-[Пиво](http://bwbrewery.ru/)
+[Пивоварня Чёрный дятел](http://bwbrewery.ru/)
 
 
