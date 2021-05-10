@@ -74,6 +74,7 @@ body {
 	line-height: @lineheight;
 	color: @textcolor;
 	min-width: 320px;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -94,4 +95,16 @@ body {
   font-size: 30px;
   line-height: 36px;
   .sm(font-size,22px);
+}
+
+.wpcf7-form p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wpcf7 form .wpcf7-response-output {
+	margin-top: 0;
+	font-size: 13px;
+}
+.wpcf7-not-valid-tip {
+	font-size: 13px;
 }

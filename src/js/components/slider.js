@@ -1,7 +1,7 @@
 $('.carousel__slider').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
-  lazyLoad: 'ondemand',
+  // lazyLoad: 'ondemand',
   autoplay: true,
   autoplaySpeed: 3000,
   // arrows: false,
