@@ -1,4 +1,4 @@
-$('.prod__item').hide();
+// $('.prod__item').hide();
 
 let attr = $('.prod__tab.prod__tab--active').attr('data-tab');
 $('.prod__item[data-tab="'+ attr +'"]').show();

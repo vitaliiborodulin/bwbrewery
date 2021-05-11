@@ -9,8 +9,8 @@ $(function(){
   //= components/age.js
   //= components/burger.js
   //= components/menuClick.js
-  //= components/tabs.js
   //= components/slider.js
+  //= components/tabs.js
   //= components/map.js
   //= components/upBtn.js
 

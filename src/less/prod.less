@@ -53,10 +53,11 @@
   &__list {
     min-height: 700px;
     .row-flex();
-    justify-content: center;
+    // justify-content: center;
   }
 
   &__item {
+    display: none;
     .col();
     .size(4);
     .size-lg(6);
@@ -114,7 +115,6 @@
     color: @grey;
 
     // min-height: 112px;
-    text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
