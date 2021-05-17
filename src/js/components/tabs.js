@@ -1,4 +1,4 @@
-// $('.prod__item').hide();
+$('.prod__item').hide();
 
 let attr = $('.prod__tab.prod__tab--active').attr('data-tab');
 $('.prod__item[data-tab="'+ attr +'"]').show();
@@ -13,7 +13,6 @@ $('.prod__tab').on('click', function(){
   $('.prod__item').hide();
   let content = $('.prod__item[data-tab="'+ id +'"]');
   content.show();
-  
 });
 
 $('#prod-select').on('change', function(){
@@ -22,7 +21,6 @@ $('#prod-select').on('change', function(){
   $('.prod__item').hide();
   let content = $('.prod__item[data-tab="'+ id +'"]');
   content.show();
-
 });
 
 //map
